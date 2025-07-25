@@ -77,6 +77,10 @@ if (ANDROID)
   add_subdirectory(Android/jni)
 endif()
 
+if (ENABLE_N64)
+  add_subdirectory(N64)
+endif()
+
 if (ENABLE_TESTS)
   add_subdirectory(UnitTests)
 endif()
